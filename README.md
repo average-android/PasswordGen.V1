@@ -1,6 +1,6 @@
-<img src= ../assets/images/Preview1.png/>
-<img src= ../assets/images/Preview2.png/>
-<img src= ../assets/images/Preview3.png/>
+<img src= "../assets/images/Preview1.png"/>
+<img src= "../assets/images/Preview2.png"/>
+<img src= "../assets/images/Preview3.png"/>
 
 
 <h1>Hello again!</h1>
