@@ -19,7 +19,6 @@ function generatePassword() {
   var passwordstart = '';
   var password = "";
  
-  
   var uppercaseConfirm = confirm("Press OK if you want Uppercase characters in your password.");
 
   if (uppercaseConfirm) {passwordstart += uppercase}
@@ -34,9 +33,9 @@ function generatePassword() {
 
   var specialsConfirm = confirm("Press OK if you'd like special characters in your password.");
 
-  if (specialsConfirm) {passwordstart += specials}
+  if (!uppercaseConfirm && !lowercaseConfirm && !numbersConfirm && !symbolsConfirm) {return}
 
-  if (!uppercaseConfirm && !lowercaseConfirm && !numbersConfirm && !symbolsConfirm) {alert("Please choose at least one character type.");return}
+  if (specialsConfirm) {passwordstart += specials}
 
   var passwordlength = prompt("How long would you like your password to be?");
 
